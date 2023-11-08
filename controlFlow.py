@@ -55,11 +55,11 @@ while True:
 # Use the int() function to convert the string returned from input() into an integer
 # Start with an if that checks if the age is less than 3
 
-Age = int(input("Input a dog's age: "))
-if Age <= 2:
-    print(f"The dog's age in dog years is {Age*10}")
-elif Age > 2:
-    print(f"The dog's age in dog years is {(Age-2)*7+20}")
+age = int(input("Input a dog's age: "))
+if age <= 2:
+    print(f"The dog's age in dog years is {age*10}")
+elif age > 2:
+    print(f"The dog's age in dog years is {(age-2)*7+20}")
 
 
 
@@ -80,8 +80,17 @@ elif Age > 2:
 #      - A triangle with sides of <a>, <b> & <c> is a <type of triangle> triangle
 
 
+print('Enter the lengths of three side of a triangle:')
+side_1 = int(input('a: '))
+side_2 = int(input('b: '))
+side_3 = int(input('c: '))
 
-
+if side_1 == side_2 == side_3:
+    print(f'A triangle with sides of {side_1}, {side_2} & {side_3} is an equilateral triangle')
+elif side_1!= side_2!= side_3!= side_1:
+    print(f'A triangle with sides of {side_1}, {side_2} & {side_3} is a scalene triangle')
+elif side_1 == side_2 or side_1 == side_3 or side_2 == side_3:
+    print(f'A triangle with sides of {side_1}, {side_2} & {side_3} is an isosceles triangle')
 
 
 # exercise-05 Fibonacci sequence for first 50 terms
