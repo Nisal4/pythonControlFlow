@@ -111,8 +111,15 @@ elif side_1 == side_2 or side_1 == side_3 or side_2 == side_3:
 # Use a while loop with a looping variable, or look into Python ranges, e.g.:
 #   for n in range(50):
 
+fibonacci = [0, 1]
 
+for n in range(2, 50):
+    next_num = fibonacci[-1] + fibonacci[-2]
+    fibonacci.append(next_num)
+print(fibonacci)
 
+for n in range(50):
+    print(f'term: {n} / number: {fibonacci[n]}')
 
 
 # exercise-06 What's the Season?
