@@ -31,7 +31,12 @@ else:
 #      - What you entered is xx characters long
 # 3. Return to step 1, unless the word 'quit' was entered.
 
-
+while True:
+    phrase = input("Please enter a word/phrase or 'quit' to exit: ").lower()
+    if phrase == 'quit':
+        break
+    else:
+        print(f'What you entered is {len(phrase)} characters long')
 
 
 
