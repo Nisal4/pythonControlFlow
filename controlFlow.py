@@ -55,6 +55,11 @@ while True:
 # Use the int() function to convert the string returned from input() into an integer
 # Start with an if that checks if the age is less than 3
 
+Age = int(input("Input a dog's age: "))
+if Age <= 2:
+    print(f"The dog's age in dog years is {Age*10}")
+elif Age > 2:
+    print(f"The dog's age in dog years is {(Age-2)*7+20}")
 
 
 
