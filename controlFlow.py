@@ -11,7 +11,14 @@
 # Hints:  Use the in operator to check if a character is in another string
 #         For example, if some_char in 'abc':
 
+letter = input("Please enter a letter from the alphabet (a-z or A-Z): ").upper()
 
+if letter in 'AEIOU':
+    print(f'The letter {letter} is a vowel')
+elif letter in 'BCDFGHJKLMNPQRSTVWXYZ':
+    print(f'The letter {letter} is a consonant')
+else:
+    print(f'{letter} is not a letter')
 
 
 
